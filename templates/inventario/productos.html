@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}
+Productos disponibles
+{% endblock title %}    
+
+{% block content %}
+<h2>Productos disponibles</h2>  
+<table class="table table-bordered">
+    <thead>
+        <tr> 
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Stock</th>
+            <th>Categoría</th>
+            <th>acciones</th>
+        </tr>  
+     </thead>
+     <tbody>
+        {% for producto in productos %}
+         <tr>
+            <td>{{ producto.nombre }}</td>
+            <td>{{ producto.precio }}</td>
+            <td>{{ producto.stock }}</td>
+            <td>{{ producto.categoria.nombre }}</td>
+             <td>
+               <a href="{% url "inventario:editar_producto"  producto.id %}" class="btn btn-sm btn-warning">editar</a>
+               <a href="{% url "inventario:eliminar_producto"  producto.id %}" class="btn btn-sm btn-danger">eliminar</a>
+            </td>
+         </tr>
+        {% endfor %}
+     </tbody>
+</table> 
+{% endblock content %}
