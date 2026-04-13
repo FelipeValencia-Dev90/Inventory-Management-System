@@ -1,5 +1,27 @@
 # 📦 Sistema de Gestión de Inventario 
 
+## 🖼️ Vista Previa del Sistema
+
+<table style="width:100%">
+  <tr>
+    <td width="50%"><img src="screenshots/login.png" alt="Pantalla de Login" width="100%"></td>
+    <td width="50%"><img src="screenshots/Autenticación.png" alt="Gestión de Usuarios" width="100%"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Acceso Seguro</b></td>
+    <td align="center"><b>Panel de Usuarios</b></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="screenshots/Productos.png" alt="Lista de Productos" width="100%"></td>
+    <td width="50%"><img src="screenshots/Stock-Movimientos.png" alt="Registro de Movimientos" width="100%"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Inventario de Productos</b></td>
+    <td align="center"><b>Registro de Movimientos de Stock</b></td>
+  </tr>
+</table>
+
+
 Este es un sistema robusto desarrollado con **Django** para el control de inventarios, diseñado para facilitar el seguimiento de productos, categorías y movimientos de stock en tiempo real.
 
 ## 🚀 Características Principales
